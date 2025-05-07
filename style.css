@@ -2,6 +2,11 @@ body{
     background: black;
     color: white;
     font: normal 20px arial;
+    margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* centro na horizontal */
+      align-items: center;     /* centro na vertical */
 }
 
 h1{
