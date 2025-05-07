@@ -20,6 +20,18 @@ h1{
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 30px;
+    justify-content: space-between; /* separa os itens: esquerda, centro, direita */
+    align-items: center;
   }
   
+  nav{
+    padding: 20px 40px;            /* espaço em cima e nas laterais */
+    border-bottom: 1px solid white; /* linha branca embaixo */
+    background-color: #1e1e1e;
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
