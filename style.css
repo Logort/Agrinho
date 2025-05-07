@@ -3,3 +3,7 @@ body{
     color: white;
     font: normal 20px arial;
 }
+
+h1{
+    justify-content: center;
+}
