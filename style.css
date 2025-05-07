@@ -13,6 +13,8 @@ h1{
     color: white;
  }
 
+
+ /* esse comando faz com que os pontos flutuantes desapareçam*/
  nav ul {
     list-style: none;
     padding: 0;
