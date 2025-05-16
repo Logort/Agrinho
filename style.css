@@ -29,7 +29,6 @@ h1{
   nav{
     padding: 20px 40px;            /* espaço em cima e nas laterais */
     border-bottom: 1px solid white; /* linha branca embaixo */
-    background-color: #1e1e1e;
   }
 
   li a {
