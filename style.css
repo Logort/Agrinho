@@ -10,29 +10,16 @@ h1{
    margin-top: 40px;
 }
 
- nav a{
-    text-decoration: none;
-    color: white;
- }
+ /* Imagem no header responsiva */
+header img {
+  width: 100%;
+  max-width: 100%; /* Faz com que a imagem se ajuste ao tamanho da tela */
+  height: auto;
+}
 
-
- /* esse comando faz com que os pontos flutuantes desapareçam*/
- nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between; /* separa os itens: esquerda, centro, direita */
-    align-items: center;
-  }
-  
-  nav{
-    padding: 20px 40px;            /* espaço em cima e nas laterais */
-    border-bottom: 1px solid white; /* linha branca embaixo */
-  }
-
-  li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
+/* Ajusta as imagens dentro dos cards */
+.uniao .card img {
+  width: 100%;
+  max-width: 250px; /* Limita a largura das imagens nos cards */
+  height: auto;
+}
