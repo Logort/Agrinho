@@ -38,3 +38,20 @@ header img {
   max-width: 250px; /* Limita a largura das imagens nos cards */
   height: auto;
 }
+
+.imagem-direita {
+  width: 300px;
+  float: right;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-esquerda {
+  width: 300px;
+  float: left;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
