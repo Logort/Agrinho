@@ -1,76 +1,90 @@
-body{
-    background: black;
-    color: white;
-    font: normal 20px arial;
-    
+/* Fundo escuro e texto branco */
+body {
+  background: black;
+  color: white;
+  font: normal 20px Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-h1{
-   text-align: center;
-   margin-top: 40px;
+/* ================= HEADER ================= */
+
+/* Estilo geral do header */
+header {
+  background-image: url("colhedeira.jpge");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
 }
 
-
-/* Ajusta a imagem ao lado do h2 usando flexbox */
-h2 {
+/* Faixa escura transparente por cima da imagem */
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* faixa escura */
+  height: 100%;
   display: flex;
-  align-items: center; /* Alinha a imagem com o texto */
+  justify-content: center;
+  align-items: center;
 }
 
-.imagem-h2 {
-  width: 50%; /* Ajuste o valor conforme necessário */
-  height: auto;
-  margin-right: 20px; /* Espaço entre a imagem e o texto */
+/* Título centralizado no header */
+header h1 {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
 }
 
+/* ================ CONTEÚDO GERAL ================ */
 
-
- /* Imagem no header responsiva */
-header img {
-  width: 100%;
-  max-width: 100%; /* Faz com que a imagem se ajuste ao tamanho da tela */
-  height: auto;
+h2 {
+  font-size: 28px;
+  margin: 30px 20px 10px;
+  color: #fff;
 }
 
-/* Ajusta as imagens dentro dos cards */
-.uniao .card img {
-  width: 100%;
-  max-width: 250px; /* Limita a largura das imagens nos cards */
-  height: auto;
-}
+/* ================= IMAGENS ================= */
 
-.imagem-direita {
-  width: 300px;
-  float: right;
-  margin: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.imagem-esquerda {
-  width: 300px;
-  float: left;
-  margin: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-
+/* Imagem grande com sombra e bordas */
 .imagem-direita,
 .imagem-esquerda {
-  width: 500px;              /* 🔼 aumenta o tamanho */
-  border-radius: 15px;       /* bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave */
+  width: 500px;
+  max-width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   margin: 20px;
 }
 
+/* Posicionamento lateral das imagens */
 .imagem-direita {
   float: right;
 }
 
 .imagem-esquerda {
   float: left;
+}
+
+/* ================ CARDS ================ */
+
+.uniao .card {
+  padding: 20px;
+  margin: 30px 0;
+}
+
+/* Título dentro dos cards */
+.card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #f0f0f0;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #111;
+  color: #888;
 }
