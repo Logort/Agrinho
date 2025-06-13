@@ -55,3 +55,22 @@ header img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+
+.imagem-direita,
+.imagem-esquerda {
+  width: 500px;              /* 🔼 aumenta o tamanho */
+  border-radius: 15px;       /* bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra suave */
+  margin: 20px;
+}
+
+.imagem-direita {
+  float: right;
+}
+
+.imagem-esquerda {
+  float: left;
+}
