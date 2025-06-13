@@ -10,6 +10,21 @@ h1{
    margin-top: 40px;
 }
 
+
+/* Ajusta a imagem ao lado do h2 usando flexbox */
+h2 {
+  display: flex;
+  align-items: center; /* Alinha a imagem com o texto */
+}
+
+.imagem-h2 {
+  width: 50%; /* Ajuste o valor conforme necessário */
+  height: auto;
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+
+
  /* Imagem no header responsiva */
 header img {
   width: 100%;
