@@ -1,14 +1,21 @@
+/* Reset geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Fundo escuro e texto branco */
 body {
   background: black;
   color: white;
-  font: normal 20px Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 
 /* ================= HEADER ================= */
+
 header {
   background-image: url("img/colhedeira-1200.jpg");
   background-size: cover;
@@ -29,36 +36,27 @@ header h1 {
   color: white;
   font-size: 36px;
   text-align: center;
-  margin: 0;
+  padding: 0 20px;
 }
 
-/* ================ CONTAINERS ================ */
+/* ================= CONTEÚDO GERAL ================= */
+
 .container {
+  padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
-/* ================ SEÇÕES ================ */
 h2 {
   font-size: 28px;
-  margin: 30px 0 10px;
-  color: #fff;
+  margin-bottom: 20px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 32px;
-  margin-top: 40px;
-  color: #fff;
-}
-
-/* ================ FLEX CONTAINER ================ */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   margin-top: 20px;
 }
 
@@ -66,30 +64,34 @@ h1 {
   flex-direction: row-reverse;
 }
 
-/* ================ IMAGENS ================ */
 .flex-container img {
   width: 500px;
   max-width: 100%;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
-/* ================ TEXTO ================ */
 .texto {
   flex: 1;
-  min-width: 250px;
+  min-width: 280px;
 }
 
-/* ================ CARDS ================ */
 .card {
-  margin: 40px 0;
+  margin-bottom: 60px;
 }
 
-/* ================ FOOTER ================ */
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #f0f0f0;
+}
+
+/* ================= FOOTER ================= */
+
 footer {
   text-align: center;
   padding: 20px;
-  margin-top: 60px;
   background-color: #111;
-  color: #888;
+  color: #aaa;
+  font-size: 16px;
 }
