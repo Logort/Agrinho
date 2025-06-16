@@ -12,10 +12,10 @@ body {
 
 /* Estilo geral do header */
 header {
-  background-image: url("/img/colhedeira.jpg");
+  background-image: url("colhedeira 1200.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 300px;
   position: relative;
 }
 
