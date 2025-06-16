@@ -52,6 +52,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* Adicionado para espaçar parágrafos sem <br> */
+p {
+  margin-bottom: 1em;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -86,6 +91,13 @@ h2 {
   color: #f0f0f0;
 }
 
+/* Estilo para centralizar o título "O Que Une Campo e Cidade" */
+.uniao h1 {
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 40px; /* Adiciona mais espaço abaixo do título */
+  font-size: 32px; /* Ajusta o tamanho da fonte */
+}
+
 /* ================= FOOTER ================= */
 
 footer {
@@ -97,16 +109,20 @@ footer {
 }
 
 
-/*===== CELEBRAÇÃO=====*/
+/*===== CELEBRAÇÃO =====*/
 .celebracao {
   padding: 3rem 1rem;
   background-color: #f9f6f0;
   text-align: center;
+  color: #333; /* Garante que o texto dos parágrafos tenha bom contraste */
 }
 
 .celebracao h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+  color: #4CAF50; /* Um verde vibrante para destaque */
+  font-weight: bold; /* Deixa o texto em negrito */
+  margin-bottom: 1.5rem; /* Aumenta o espaçamento abaixo do título */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Adiciona uma leve sombra para mais destaque */
 }
 
 .celebracao p {
@@ -123,8 +139,87 @@ footer {
 
 .motivo {
   background-color: #fff;
-  padding: 1rem;
+  padding: 1.5rem; /* Aumentado o padding para melhor visual */
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+.motivo h3 {
+  margin-bottom: 0.8rem;
+  color: #555; /* Cor mais escura para os títulos dos motivos */
+  font-size: 1.3rem;
+}
+
+.motivo p {
+  font-size: 1rem;
+  margin-bottom: 0; /* Remove a margem padrão dos parágrafos dentro de motivo */
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+/* Telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px; /* Reduz o padding lateral em telas menores */
+  }
+
+  header h1 {
+    font-size: 28px; /* Ajusta o tamanho do título do cabeçalho */
+  }
+
+  h2 {
+    font-size: 24px; /* Ajusta o tamanho dos títulos de seção */
+  }
+
+  .flex-container {
+    flex-direction: column; /* Coloca os itens (imagem e texto) um abaixo do outro */
+    text-align: center; /* Centraliza o texto quando a direção é coluna */
+    gap: 20px; /* Reduz o espaçamento entre os itens */
+  }
+
+  .flex-container.reverse {
+    flex-direction: column; /* Garante que a ordem vertical seja mantida, mesmo com reverse */
+  }
+
+  .flex-container img {
+    width: 100%; /* Imagens ocupam a largura total disponível */
+    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo da imagem */
+  }
+
+  .card {
+    margin-bottom: 40px; /* Reduz o espaçamento entre os cards */
+  }
+
+  /* Ajustes para a seção de celebração */
+  .celebracao h2 {
+    font-size: 2rem; /* Ajusta o tamanho do título da celebração */
+  }
+
+  .celebracao p {
+    font-size: 1rem; /* Ajusta o tamanho do parágrafo da celebração */
+  }
+
+  .motivos {
+    grid-template-columns: 1fr; /* Coloca os motivos em uma única coluna */
+  }
+
+  .motivo {
+    padding: 1rem; /* Reduz um pouco o padding dos motivos */
+  }
+}
+
+/* Telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+    padding: 0 10px; /* Reduz ainda mais o padding */
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  body {
+    font-size: 16px; /* Reduz o tamanho da fonte base */
+  }
+}
