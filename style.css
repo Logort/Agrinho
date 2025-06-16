@@ -9,8 +9,6 @@ body {
 }
 
 /* ================= HEADER ================= */
-
-/* Estilo geral do header */
 header {
   background-image: url("img/colhedeira-1200.jpg");
   background-size: cover;
@@ -19,16 +17,14 @@ header {
   position: relative;
 }
 
-/* Faixa escura transparente por cima da imagem */
 .header-overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* faixa escura */
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Título centralizado no header */
 header h1 {
   color: white;
   font-size: 36px;
@@ -36,59 +32,64 @@ header h1 {
   margin: 0;
 }
 
-/* ================ CONTEÚDO GERAL ================ */
+/* ================ CONTAINERS ================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 
+/* ================ SEÇÕES ================ */
 h2 {
   font-size: 28px;
-  margin: 30px 20px 10px;
+  margin: 30px 0 10px;
   color: #fff;
 }
 
-/* ================= IMAGENS ================= */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 40px;
+  color: #fff;
+}
 
-/* Imagem grande com sombra e bordas */
-.imagem-direita,
-.imagem-esquerda {
+/* ================ FLEX CONTAINER ================ */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.flex-container.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ================ IMAGENS ================ */
+.flex-container img {
   width: 500px;
-  max-width: 90%;
+  max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  margin: 20px;
 }
 
-/* Posicionamento lateral das imagens */
-.imagem-direita {
-  float: right;
-}
-
-.imagem-esquerda {
-  float: left;
+/* ================ TEXTO ================ */
+.texto {
+  flex: 1;
+  min-width: 250px;
 }
 
 /* ================ CARDS ================ */
-
-.uniao .card {
-  padding: 20px;
-  margin: 30px 0;
+.card {
+  margin: 40px 0;
 }
 
-/* Título dentro dos cards */
-.card h3 {
-  margin-top: 10px;
-  font-size: 24px;
-  color: #f0f0f0;
-}
-
-/* ================= FOOTER ================= */
-
+/* ================ FOOTER ================ */
 footer {
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 60px;
   background-color: #111;
   color: #888;
-}
-
-.intro {
-  padding: 30px 40px; /* 30px em cima/baixo, 40px nas laterais */
 }
